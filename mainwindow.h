@@ -30,6 +30,8 @@ private slots:
     void on_lineEdit_returnPressed();
 
 private:
+    const int version = QDataStream::Qt_6_2;
+
     Ui::MainWindow *ui;
 
     QTcpSocket* socket;

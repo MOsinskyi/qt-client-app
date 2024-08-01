@@ -22,7 +22,7 @@ MainWindow::~MainWindow()
 void MainWindow::slotReadyRead()
 {
     QDataStream in(socket);
-    in.setVersion(QDataStream::Qt_6_2);
+    in.setVersion(version);
     if(in.status() == QDataStream::Ok){
         for(;;) {
             if (nextBlockSize == 0) {
@@ -50,7 +50,7 @@ void MainWindow::sendToServer(QString str)
 {
     data.clear();
     QDataStream out(&data, QIODevice::WriteOnly);
-    out.setVersion(QDataStream::Qt_6_2);
+    out.setVersion(version);
     out << quint16(0) << QTime::currentTime() << str;
     out.device()->seek(0);
     out << quint16(data.size() - sizeof(quint16));
@@ -60,7 +60,10 @@ void MainWindow::sendToServer(QString str)
 
 void MainWindow::on_pushButton_clicked()
 {
-    socket->connectToHost("127.0.0.1", 2323);
+    auto port = ui->lineEdit_3->text().toUShort();
+    auto ip = ui->lineEdit_2->text();
+
+    socket->connectToHost(ip, port);
 }
 
 
