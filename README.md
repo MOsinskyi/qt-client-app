@@ -1,4 +1,4 @@
-![](/home/maksym/Pictures/Screenshots/Screenshot from 2024-08-02 19-32-10.png)
+![](images/README_title.png)
 
 ![Static Badge](https://img.shields.io/badge/_-6.2-gray?logo=qt) ![GitHub License](https://img.shields.io/github/license/MOsinskyi/qt-client-app?color=blue) ![GitHub repo size](https://img.shields.io/github/repo-size/MOsinskyi/qt-client-app) ![GitHub Release](https://img.shields.io/github/v/release/MOsinskyi/qt-client-app?color=purple) 
 
