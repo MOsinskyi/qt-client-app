@@ -1,4 +1,7 @@
-![Static Badge](https://img.shields.io/badge/_-6.2-gray?logo=qt) 
+![](/home/maksym/Pictures/Screenshots/Screenshot from 2024-08-02 19-32-10.png)
+
+![Static Badge](https://img.shields.io/badge/_-6.2-gray?logo=qt) ![GitHub License](https://img.shields.io/github/license/MOsinskyi/qt-client-app?color=blue) ![GitHub repo size](https://img.shields.io/github/repo-size/MOsinskyi/qt-client-app) ![GitHub Release](https://img.shields.io/github/v/release/MOsinskyi/qt-client-app?color=purple) 
+
 # Qt TCP Client Application
 
 This project is a Qt-based TCP client application that demonstrates how to create a GUI application using Qt and how to interact with a [TCP server](https://github.com/MOsinskyi/client-server-qt). The application includes features such as sending and receiving messages from the server.
@@ -60,6 +63,75 @@ This project is a Qt-based TCP client application that demonstrates how to creat
    ```bash
    ./build/qt-client-app
    ```
+
+---
+
+### Linux Ubuntu
+
+1. Go to release page.
+
+2. Download ubuntu package: `client-app-linux-ubuntu.deb`.
+
+3. Install package, using command:
+
+   ```bash
+   sudo dpkg -i client-app-linux-ubuntu.deb
+   ```
+
+4. Done ✅.
+
+---
+
+### Other Linux distro
+
+#### Installer
+
+1. Download `client-server-linux-installer.run` from release page.
+
+2. Run installer:
+
+   ```bash
+   chmod +x client-server-linux-installer.run
+   ./client-server-linux-installer.run
+   ```
+
+3. Follow the installer steps.
+
+4. Done ✅.
+
+#### Portable
+
+1. Download `client-app-linux-portable.zip` from release page.
+
+2. Extract files from archive.
+
+3. Run:
+
+   ```bash
+   cd ~/client-app-linux-portable/Client
+   chmod +x client-app.sh bin/client-app
+   ./client-app.sh
+   ```
+
+4. Done ✅.
+
+---
+
+### Windows
+
+#### Installer
+
+1. Download `client-server-linux-installer.exe` from release page.
+2. Run installer **as Administrator**.
+3. Follow installer steps.
+4. Done ✅.
+
+#### Portable
+
+1. Download `client-app-windows-portable.zip` from release page.
+2. Extract files from archive.
+3. Run `client-app.bat`.
+4. Done ✅.
 
 ## 🤗 Usage
 
